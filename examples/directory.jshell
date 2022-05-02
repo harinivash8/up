@@ -1,0 +1,43 @@
+//-----------------------------------
+// Example of saaving and reading
+// histograms from files.
+// TBrowser can be used to access
+// GUI for browsing the file and
+// plotting histograms stores
+//-----------------------------------
+import java.util.*;
+import twig.data.*;
+
+Random r = new Random();
+TDirectory dir = new TDirectory();
+
+H1F h = new H1F("myHisto",80,0.0,2.0);
+h.attr().setLineColor(2);
+
+for(int i = 0; i < 300; i++){
+  h.fill(r.nextDouble()+r.nextDouble());
+}
+
+dir.add("/data/online",h);
+dir.write("dataFile.twig");
+
+//************************************
+// NOW we read back the histograms
+//************************************
+
+ TDirectory dir2 = new TDirectory("dataFile.twig");
+
+dir2.show(); // will print content of the file
+
+H1F h2 = (H1F) dir2.get("/data/online/myHisto");
+TGCanvas c = new TGCanvas();
+c.view().region().draw(h2);
+c.repaint();
+
+//*************************************
+// If file contains many histograms
+// the browser will help with heararichical
+// view of directory  structure.
+//*************************************
+// Uncomment to launch the browser
+// TwigStudio.browser("dataFile.twig");
