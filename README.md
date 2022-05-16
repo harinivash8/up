@@ -22,3 +22,13 @@ this command takes two lines from the input and joins them into one line
 ```
 paste - - < epip_hb.txt > epip_hb_joined.txt
 ```
+
+# Distribution
+
+The distribution of current package containing twig package can be obtained here:
+
+```
+https://userweb.jlab.org/~gavalian/software/j4np/
+```
+
+The latest j4np package should be used.
