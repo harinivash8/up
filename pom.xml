@@ -42,6 +42,7 @@
               </manifest>
             </archive>
 	    <finalName>twig-${revision}-core</finalName>
+	    <appendAssemblyId>false</appendAssemblyId>
             <descriptorRefs>
               <descriptorRef>jar-with-dependencies</descriptorRef>
             </descriptorRefs>
