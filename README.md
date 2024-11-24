@@ -7,7 +7,7 @@ and since became very improtant part of CLAS12 online and offline software.
 
 # Visualization
 
-<img src="https://github.com/gavalian/twig/blob/master/tutorials/images/twig-demo-0.0.4.png" width="800">
+<img src="https://github.com/gavalian/twig/blob/main/tutorials/images/twig-demo-0.0.4.png" width="800">
 
 # Tutorials
 
