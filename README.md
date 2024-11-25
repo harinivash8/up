@@ -14,7 +14,7 @@ and since became very improtant part of CLAS12 online and offline software.
 
 Include twig project in your pom using:
 
-```
+```html
  <!-- github repository for TWIG Library -->
  <repositories>
     <repository>
