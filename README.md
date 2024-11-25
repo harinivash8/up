@@ -32,6 +32,27 @@ Include twig project in your pom using:
 
 Check out the distribution site for newer versions: (click on "Packages" on the right menu bar)
 
+# Tutorials
+
+The tutorials for some of the graph types can be found in directory tutorials/plotting, and direcotry 
+tutorials/io containds examples of data IO., such as saving histograms and reading and plotting, also 
+reading data from CSV and Text files and plotting graphs.
+
+To run tutorials compile the library:
+
+```
+prompt> git clone https://github.com/gavalian/twig.git
+prompt> mvn install
+```
+
+then run command (depnding what version you got)
+
+```
+prompt> jshell jshell --class-path target/twig-0.0.4-core.jar --startup etc/imports.jshell tutorials/plotting/advanced_bar_chart.java
+```
+the example scripts are writte to run in JSHELL, if you'd like to include them in your Java program, you must add the imports found in
+etc/imports.jshell file.
+If you'd like a specific example of your favorite graph type, please, submit an issue and I will create the desired example.
 
 # Gallery
 
@@ -66,27 +87,6 @@ Check out the distribution site for newer versions: (click on "Packages" on the 
     </tr>
 </table>
 
-# Tutorials
-
-The tutorials for some of the graph types can be found in directory tutorials/plotting, and direcotry 
-tutorials/io containds examples of data IO., such as saving histograms and reading and plotting, also 
-reading data from CSV and Text files and plotting graphs.
-
-To run tutorials compile the library:
-
-```
-prompt> git clone https://github.com/gavalian/twig.git
-prompt> mvn install
-```
-
-then run command (depnding what version you got)
-
-```
-prompt> jshell jshell --class-path target/twig-0.0.4-core.jar --startup etc/imports.jshell tutorials/plotting/advanced_bar_chart.java
-```
-the example scripts are writte to run in JSHELL, if you'd like to include them in your Java program, you must add the imports found in
-etc/imports.jshell file.
-If you'd like a specific example of your favorite graph type, please, submit an issue and I will create the desired example.
 
 # Example of creating tuple from text file (Appendix)
 
