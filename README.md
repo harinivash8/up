@@ -45,7 +45,7 @@ Check out the distribution site for newer versions: (click on "Packages" on the 
             </figure>
         </td>
         <td width="50%">
-             <a href="https://github.com/gavalian/twig/blob/main/tutorials/images/figure_advanced_bar_chart.png">
+             <a href="https://github.com/gavalian/twig/blob/main/tutorials/plotting/advanced_bar_chart.java">
               <img src="https://github.com/gavalian/twig/blob/main/tutorials/images/figure_advanced_bar_chart.png" alt=""></a>
                 <figcaption><h2></h2></figcaption>
         </td>
