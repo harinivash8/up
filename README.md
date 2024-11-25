@@ -59,8 +59,8 @@ Check out the distribution site for newer versions: (click on "Packages" on the 
             </figure>
         </td>
         <td width="50%">
-             <a href="https://github.com/gavalian/twig/blob/main/tutorials/images/figure_slice_graph_3d.pdf">
-              <img src="https://github.com/gavalian/twig/blob/main/tutorials/images/figure_slice_graph_3d.pdf" alt=""></a>
+             <a href="https://github.com/gavalian/twig/blob/main/tutorials/images/figure_slice_graph_3d.png">
+              <img src="https://github.com/gavalian/twig/blob/main/tutorials/images/figure_slice_graph_3d.png" alt=""></a>
                 <figcaption><h2></h2></figcaption>
         </td>
     </tr>
