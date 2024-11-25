@@ -39,7 +39,7 @@ Check out the distribution site for newer versions: (click on "Packages" on the 
     <tr>
         <td width="50%">
             <figure>
-                <a href="https://github.com/gavalian/twig/blob/main/tutorials/images/figure_advanced_graph_fitting.png">
+                <a href="https://github.com/gavalian/twig/blob/main/tutorials/plotting/advanced_graph_fitting.java">
                  <img src="https://github.com/gavalian/twig/blob/main/tutorials/images/figure_advanced_graph_fitting.png" alt=""></a>
                 <figcaption><h2></h2></figcaption>
             </figure>
@@ -53,7 +53,7 @@ Check out the distribution site for newer versions: (click on "Packages" on the 
  <tr>       
    <td width="50%">
             <figure>
-                <a href="https://github.com/gavalian/twig/blob/main/tutorials/images/figure_confusion_matrix.png">
+                <a href="https://github.com/gavalian/twig/blob/main/tutorials/plotting/confusion_matrix.java">
                  <img src="https://github.com/gavalian/twig/blob/main/tutorials/images/figure_confusion_matrix.png" alt=""></a>
                 <figcaption><h2></h2></figcaption>
             </figure>
