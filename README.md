@@ -44,11 +44,16 @@ Check out the distribution site for newer versions: (click on "Packages" on the 
                 <figcaption><h2></h2></figcaption>
             </figure>
         </td>
+       
         <td width="50%">
              <a href="https://github.com/gavalian/twig/blob/main/tutorials/images/figure_advanced_bar_chart.png">
               <img src="https://github.com/gavalian/twig/blob/main/tutorials/images/figure_advanced_bar_chart.png" alt=""></a>
                 <figcaption><h2></h2></figcaption>
         </td>
+    </tr>
+    <tr>
+    <td> <a href="https://github.com/gavalian/twig/blob/main/tutorials/plotting/advanced_graph_fitting.java"> source code </a> </td>
+    <td> <a href="https://github.com/gavalian/twig/blob/main/tutorials/plotting/confusion_matrix.java"> source code </a> </td>
     </tr>
  <tr>       
    <td width="50%">
