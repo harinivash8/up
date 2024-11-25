@@ -39,8 +39,8 @@ Check out the distribution site for newer versions: (click on "Packages" on the 
     <tr>
         <td width="50%">
             <figure>
-                <a href="https://github.com/gavalian/twig/blob/main/tutorials/images/figure_confusion_matrix.png">
-                 <img src="https://github.com/gavalian/twig/blob/main/tutorials/images/figure_confusion_matrix.png" alt=""></a>
+                <a href="https://github.com/gavalian/twig/blob/main/tutorials/images/figure_advanced_graph_fitting.png">
+                 <img src="https://github.com/gavalian/twig/blob/main/tutorials/images/figure_advanced_graph_fitting.png" alt=""></a>
                 <figcaption><h2></h2></figcaption>
             </figure>
         </td>
@@ -50,11 +50,11 @@ Check out the distribution site for newer versions: (click on "Packages" on the 
                 <figcaption><h2></h2></figcaption>
         </td>
     </tr>
- <tr>
-        <td width="50%">
+ <tr>       
+   <td width="50%">
             <figure>
-                <a href="https://github.com/gavalian/twig/blob/main/tutorials/images/figure_advanced_graph_fitting.png">
-                 <img src="https://github.com/gavalian/twig/blob/main/tutorials/images/figure_advanced_graph_fitting.png" alt=""></a>
+                <a href="https://github.com/gavalian/twig/blob/main/tutorials/images/figure_confusion_matrix.png">
+                 <img src="https://github.com/gavalian/twig/blob/main/tutorials/images/figure_confusion_matrix.png" alt=""></a>
                 <figcaption><h2></h2></figcaption>
             </figure>
         </td>
