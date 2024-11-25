@@ -29,7 +29,7 @@ Include twig project in your pom using:
 </dependency>
 ```
 
-Check out the distribution site for newer versions: <a href"https://maven.pkg.github.com/gavalian/twig"></a>
+Check out the distribution site for newer versions: [https://maven.pkg.github.com/gavalian/twig](https://maven.pkg.github.com/gavalian/twig)
 # Tutorials
 
 
