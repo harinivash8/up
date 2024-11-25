@@ -1,9 +1,9 @@
 # twig
 # Data Visualization and Analysis Software
 
-Twig library is evolution of groot, which was initially developped 
-for small data visualization while developing data reconstruction codes,
-and since became very improtant part of CLAS12 online and offline software.
+Powerfull data analysis and visualization tool writte in pure Java. Can be included in the application.
+Twig library is evolution of groot, which was initially developped for small data visualization while developing data reconstruction codes,
+and since became very improtant part of CLAS12 online and offline software.This project is actively developped.
 
 # Visualization
 
@@ -84,7 +84,8 @@ then run command (depnding what version you got)
 ```
 prompt> jshell jshell --class-path target/twig-0.0.4-core.jar --startup etc/imports.jshell tutorials/plotting/advanced_bar_chart.java
 ```
-
+the example scripts are writte to run in JSHELL, if you'd like to include them in your Java program, you must add the imports found in
+etc/imports.jshell file.
 If you'd like a specific example of your favorite graph type, please, submit an issue and I will create the desired example.
 
 # Example of creating tuple from text file (Appendix)
