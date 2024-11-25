@@ -17,10 +17,18 @@
 
     <repositories>
       <repository>
-	<id>ssh-clasweb</id>
-	<url>scpexe://jlabl1.jlab.org/group/clas/www/clasweb/html/clas12maven/j4np/maven</url>
+	<id>clas12-maven</id>
+	<url>https://clasweb.jlab.org/clas12maven/j4np/maven</url>
       </repository>
     </repositories>
+
+    <distributionManagement>
+      <repository>
+	<id>github</id>
+	<name>Twig Distribution</name>
+        <url>https://maven.pkg.github.com/gavalian/twig</url>
+      </repository>
+    </distributionManagement>
     
     <build>
       <extensions>
