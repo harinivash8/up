@@ -15,13 +15,14 @@ and since became very improtant part of CLAS12 online and offline software.
 Include twig project in your pom using:
 
 ```
+ <!-- github repository for TWIG Library -->
  <repositories>
     <repository>
       <id>twig-github</id>
       <url>https://maven.pkg.github.com/gavalian/twig</url>
     </repository>
  </repositories>
-
+<!-- TWIG Library (Java Data Visualization and Analysis) -->
 <dependency>
   <groupId>j4np</groupId>
   <artifactId>twig</artifactId>
@@ -29,7 +30,8 @@ Include twig project in your pom using:
 </dependency>
 ```
 
-Check out the distribution site for newer versions: [https://maven.pkg.github.com/gavalian/twig](https://maven.pkg.github.com/gavalian/twig)
+Check out the distribution site for newer versions: (click on "Packages" on the right menu bar)
+
 # Tutorials
 
 
