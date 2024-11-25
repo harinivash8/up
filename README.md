@@ -9,6 +9,27 @@ and since became very improtant part of CLAS12 online and offline software.
 
 <img src="https://github.com/gavalian/twig/blob/main/tutorials/images/twig-demo-0.0.4.png" width="800">
 
+
+# Usage
+
+Include twig project in your pom using:
+
+```
+ <repositories>
+    <repository>
+      <id>twig-github</id>
+      <url>https://maven.pkg.github.com/gavalian/twig</url>
+    </repository>
+ </repositories>
+
+<dependency>
+  <groupId>j4np</groupId>
+  <artifactId>twig</artifactId>
+  <version>0.0.4</version>
+</dependency>
+```
+
+Check out the distribution site for newer versions: <a href"https://maven.pkg.github.com/gavalian/twig"></a>
 # Tutorials
 
 
