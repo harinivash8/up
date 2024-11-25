@@ -32,8 +32,41 @@ Include twig project in your pom using:
 
 Check out the distribution site for newer versions: (click on "Packages" on the right menu bar)
 
-# Tutorials
 
+# Gallery
+
+<table class="center" width="100%">
+    <tr>
+        <td width="50%">
+            <figure>
+                <a href="https://github.com/gavalian/twig/blob/main/tutorials/images/figure_confusion_matrix.png">
+                 <img src="https://github.com/gavalian/twig/blob/main/tutorials/images/figure_confusion_matrix.png" alt=""></a>
+                <figcaption><h2></h2></figcaption>
+            </figure>
+        </td>
+        <td width="50%">
+             <a href="https://github.com/gavalian/twig/blob/main/tutorials/images/figure_advanced_bar_chart.png">
+              <img src="https://github.com/gavalian/twig/blob/main/tutorials/images/figure_advanced_bar_chart.png" alt=""></a>
+                <figcaption><h2></h2></figcaption>
+        </td>
+    </tr>
+ <tr>
+        <td width="50%">
+            <figure>
+                <a href="https://github.com/gavalian/twig/blob/main/tutorials/images/figure_advanced_graph_fitting.png">
+                 <img src="https://github.com/gavalian/twig/blob/main/tutorials/images/figure_advanced_graph_fitting.png" alt=""></a>
+                <figcaption><h2></h2></figcaption>
+            </figure>
+        </td>
+        <td width="50%">
+             <a href="https://github.com/gavalian/twig/blob/main/tutorials/images/figure_slice_graph_3d.pdf">
+              <img src="https://github.com/gavalian/twig/blob/main/tutorials/images/figure_slice_graph_3d.pdf" alt=""></a>
+                <figcaption><h2></h2></figcaption>
+        </td>
+    </tr>
+</table>
+
+# Tutorials
 
 Some new features, requested by users, required fresh look at the library 
 structure, and new iteration was born with better implementation of graphics
