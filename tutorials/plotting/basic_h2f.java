@@ -5,8 +5,13 @@
 // Author : Gavalian (Nov/2024)
 //---------------------------------------------------------
 
-Random r = new Random();
+import java.awt.Font;
 
+TStyle.getInstance().setDefaultPaveTextFont( new Font("Arial",Font.PLAIN,18));
+TStyle.getInstance().setDefaultAxisLabelFont(new Font("Arial",Font.PLAIN,18));
+TStyle.getInstance().setDefaultAxisTitleFont(new Font("Arial",Font.PLAIN,20));
+
+Random r = new Random();
 H2F h2  = new H2F("H200",50,-1.0,1.0, 50, -1.0,1.0);
 
 //--- another way to set titles
@@ -25,5 +30,6 @@ for(int k = 0; k < 81920; k++){
 
 TGCanvas c = new TGCanvas("myTwig-2D",550,550);
 
-c.draw(h2);
+c.draw(h2,"F");
+c.repaint();
 c.view().export("figure_basic_h2f.png"); // to save to PDF change the extention to .pdf

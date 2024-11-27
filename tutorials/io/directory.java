@@ -15,11 +15,11 @@ TDirectory dir = new TDirectory();
 
 dir.add("data/random",h1);
 dir.add("data/tests",Arrays.asList(h2,h3));
-
+dir.list();
 dir.write("histos.twig"); // write current state to the file
 
 //--------- snapshot funcionality
-for(int i = 0; i < 4; i++){
+/*for(int i = 0; i < 4; i++){
     for(int k = 0; k < 120; k++){
 	h1.fill(r.nextDouble());
 	h2.fill(r.nextGaussian());
@@ -27,5 +27,5 @@ for(int i = 0; i < 4; i++){
     }
     System.out.println("wait 2 seconds\n"); Thread.sleep(2000);
     dir.snapshot("histos_snap.twig");
-}
+    }*/
 

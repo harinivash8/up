@@ -85,6 +85,22 @@ If you'd like a specific example of your favorite graph type, please, submit an 
                 <figcaption><h2></h2></figcaption>
         </td>
     </tr>
+
+    <tr>	
+    <td width="50%">
+            <figure>
+                <a href="https://github.com/gavalian/twig/blob/main/tutorials/plotting/confusion_matrix.java">
+                 <img src="https://github.com/gavalian/twig/blob/main/tutorials/images/figure_confusion_matrix.png" alt=""></a>
+                <figcaption><h2></h2></figcaption>
+            </figure>
+        </td>
+        <td width="50%">
+             <a href="https://github.com/gavalian/twig/blob/main/tutorials/images/figure_slice_graph_3d.png">
+              <img src="https://github.com/gavalian/twig/blob/main/tutorials/images/figure_slice_graph_3d.png" alt=""></a>
+                <figcaption><h2></h2></figcaption>
+        </td>
+    </tr>
+    
 </table>
 
 

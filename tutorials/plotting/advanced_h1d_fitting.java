@@ -4,6 +4,11 @@
 //#########################################################
 // Author : Gavalian (Nov/2024)
 //---------------------------------------------------------
+import java.awt.Font;
+
+TStyle.getInstance().setDefaultPaveTextFont( new Font("Arial",Font.PLAIN,18));
+TStyle.getInstance().setDefaultAxisLabelFont(new Font("Arial",Font.PLAIN,18));
+TStyle.getInstance().setDefaultAxisTitleFont(new Font("Arial",Font.PLAIN,20));
 
 Random r = new Random();
 H1F h = new H1F("h100","random+gaus;x-axis;count",120,0.0,1.0);

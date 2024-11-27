@@ -5,7 +5,6 @@
 package twig.demo;
 
 import java.awt.Font;
-import java.util.Arrays;
 import java.util.Random;
 import twig.config.TPalette2D;
 import twig.config.TStyle;
