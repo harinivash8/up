@@ -5,7 +5,7 @@
     <groupId>j4np</groupId>
     <artifactId>twig</artifactId>
     <version>${revision}</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <dependencies>
       <dependency>
@@ -13,108 +13,71 @@
         <artifactId>j4np-ui</artifactId>
         <version>${version}</version>
       </dependency>
+      
+      <!-- Servlet API -->
+      <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>javax.servlet-api</artifactId>
+        <version>4.0.1</version>
+        <scope>provided</scope>
+      </dependency>
+      
+      <!-- JSP support -->
+      <dependency>
+        <groupId>javax.servlet.jsp</groupId>
+        <artifactId>javax.servlet.jsp-api</artifactId>
+        <version>2.3.3</version>
+        <scope>provided</scope>
+      </dependency>
     </dependencies>
 
     <repositories>
       <repository>
-	<id>clas12-maven</id>
-	<url>https://clasweb.jlab.org/clas12maven/j4np/maven</url>
+        <id>clas12-maven</id>
+        <url>https://clasweb.jlab.org/clas12maven/j4np/maven</url>
       </repository>
     </repositories>
 
     <distributionManagement>
       <repository>
-	<id>github</id>
-	<name>Twig Distribution</name>
+        <id>github</id>
+        <name>Twig Distribution</name>
         <url>https://maven.pkg.github.com/gavalian/twig</url>
       </repository>
     </distributionManagement>
     
     <build>
-      <extensions>
-        <extension>
-          <groupId>org.apache.maven.wagon</groupId>
-          <artifactId>wagon-ssh-external</artifactId>
-          <version>2.8</version>
-        </extension>
-      </extensions>
-
-<!--<build>-->
-  <plugins>
-    <plugin>
-      <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-shade-plugin</artifactId>
-      <version>3.4.1</version>
-      <executions>
-        <execution>
-          <phase>package</phase>
-          <goals>
-            <goal>shade</goal>
-          </goals>
-          <configuration>
-            <!-- Optionally attach as a classifier (default is "shaded") -->
-            <shadedArtifactAttached>true</shadedArtifactAttached>
-            <shadedClassifierName>core</shadedClassifierName>
-            <transformers>
-              <!-- This transformer sets your main class -->
-              <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                <mainClass>twig.demo.RunDemo</mainClass>
-              </transformer>
-            </transformers>
-          </configuration>
-        </execution>
-      </executions>
-    </plugin>
-  </plugins>
-</build>
-
-
-<!--
+      <finalName>twig</finalName>
       <plugins>
+        <!-- Jetty Plugin for easy local development -->
         <plugin>
-          <artifactId>maven-assembly-plugin</artifactId>
-          <version>2.6</version>
+          <groupId>org.eclipse.jetty</groupId>
+          <artifactId>jetty-maven-plugin</artifactId>
+          <version>11.0.15</version>
           <configuration>
-	    <archive>
-              <manifest>
-		<addClasspath>true</addClasspath>
-		<mainClass>twig.demo.RunDemo</mainClass>
-              </manifest>
-            </archive>
-	    <finalName>twig-${revision}-core</finalName>
-	    <appendAssemblyId>false</appendAssemblyId>
-            <descriptorRefs>
-              <descriptorRef>jar-with-dependencies</descriptorRef>
-            </descriptorRefs>
-	    <attach>true</attach>
+            <webApp>
+              <contextPath>/</contextPath>
+            </webApp>
+            <scanIntervalSeconds>10</scanIntervalSeconds>
           </configuration>
-          <executions>
-            <execution>
-              <id>make-assembly</id> 
-              <phase>package</phase> 
-              <goals>
-                <goal>single</goal>
-              </goals>
-            </execution>
-          </executions>
+        </plugin>
+        
+        <!-- WAR plugin configuration -->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-war-plugin</artifactId>
+          <version>3.3.2</version>
+          <configuration>
+            <failOnMissingWebXml>false</failOnMissingWebXml>
+          </configuration>
         </plugin>
       </plugins>
     </build>
-    -->
-<!--
-    <distributionManagement>
-      <repository>
-	<id>ssh-clasweb</id>
-	<url>scpexe://clas12@jlabl1.jlab.org/group/clas/www/clasweb/html/jhep/maven</url>
-      </repository>
-    </distributionManagement>    
--->
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-	<revision>0.0.4</revision>
-	<version>1.1.1</version>
+        <revision>0.0.4</revision>
+        <version>1.1.1</version>
     </properties>
-
 </project>
