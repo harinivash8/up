@@ -59,6 +59,7 @@
 
     <build>
         <finalName>twig</finalName>
+
         <plugins>
             <plugin>
                 <groupId>org.eclipse.jetty</groupId>
@@ -87,6 +88,6 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <revision>0.0.4</revision>
-        <version>1.1.1</version>
+        <j4np-ui.version>1.1.1</j4np-ui.version>
     </properties>
 </project>
