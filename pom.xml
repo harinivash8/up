@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    
+
     <groupId>j4np</groupId>
     <artifactId>twig</artifactId>
     <version>${revision}</version>
@@ -13,16 +14,14 @@
         <artifactId>j4np-ui</artifactId>
         <version>${version}</version>
       </dependency>
-      
-      <!-- Servlet API -->
+
       <dependency>
         <groupId>javax.servlet</groupId>
         <artifactId>javax.servlet-api</artifactId>
         <version>4.0.1</version>
         <scope>provided</scope>
       </dependency>
-      
-      <!-- JSP support -->
+
       <dependency>
         <groupId>javax.servlet.jsp</groupId>
         <artifactId>javax.servlet.jsp-api</artifactId>
@@ -45,11 +44,10 @@
         <url>https://maven.pkg.github.com/gavalian/twig</url>
       </repository>
     </distributionManagement>
-    
+
     <build>
       <finalName>twig</finalName>
       <plugins>
-        <!-- Jetty Plugin for easy local development -->
         <plugin>
           <groupId>org.eclipse.jetty</groupId>
           <artifactId>jetty-maven-plugin</artifactId>
@@ -61,8 +59,7 @@
             <scanIntervalSeconds>10</scanIntervalSeconds>
           </configuration>
         </plugin>
-        
-        <!-- WAR plugin configuration -->
+
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-war-plugin</artifactId>
