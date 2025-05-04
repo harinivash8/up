@@ -1,86 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>j4np</groupId>
     <artifactId>twig</artifactId>
-    <version><span class="math-inline">\{revision\}</version\>
-<packaging\>war</packaging\>
-<dependencies\>
-<dependency\>
-<groupId\>j4np</groupId\>
-<artifactId\>j4np\-ui</<1\>artifactId\>
-<version\></span>{version}</version>
-      </dependency>
+    <version>0.0.4</version>
+    <packaging>war</packaging>
 
-      <dependency>
-        <groupId>javax.servlet</groupId>
-        <artifactId>javax.servlet-api</artifactId>
-        <version>4.0.1</version>
-        <scope>provided</scope>
-      </dependency>
+    <dependencies>
+        <dependency>
+            <groupId>j4np</groupId>
+            <artifactId>j4np-ui</artifactId>
+            <version>1.1.1</version>
+        </dependency>
 
-      <dependency>
-        <groupId>javax.servlet.jsp</groupId>
-        <artifactId>javax.servlet.jsp-api</artifactId>
-        <version>2.3.3</version>
-        <scope>provided</scope>
-      </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+            <scope>provided</scope>
+        </dependency>
 
-      <dependency>
-          <groupId>org.eclipse.jetty</groupId>
-          <artifactId>jetty-server</artifactId>
-          <version>11.0.15</version>
-          <scope>provided</scope>
-      </dependency>
-      <dependency>
-          <groupId>org.eclipse.jetty</groupId>
-          <artifactId>jetty-servlet</artifactId>
-          <version>11.0.15</version>
-          <scope>provided</scope>
-      </dependency>
+        <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>javax.servlet.jsp-api</artifactId>
+            <version>2.3.3</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-server</artifactId>
+            <version>11.0.15</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-servlet</artifactId>
+            <version>11.0.15</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 
     <repositories>
-      <repository>
-        <id>clas12-maven</id>
-        <url>https://clasweb.jlab.org/clas12maven/j4np/maven</url>
-      </repository>
+        <repository>
+            <id>clas12-maven</id>
+            <url>https://clasweb.jlab.org/clas12maven/j4np/maven</url>
+        </repository>
     </repositories>
 
     <distributionManagement>
-      <repository>
-        <id>github</id>
-        <name>Twig Distribution</name>
-        <url>https://maven.pkg.github.com/gavalian/twig</url>
-      </repository>
+        <repository>
+            <id>github</id>
+            <name>Twig Distribution</name>
+            <url>https://maven.pkg.github.com/gavalian/twig</url>
+        </repository>
     </distributionManagement>
 
     <build>
-      <finalName>twig</finalName>
-      <plugins>
-        <plugin>
-          <groupId>org.eclipse.jetty</groupId>
-          <artifactId>jetty-maven-plugin</artifactId>
-          <version>11.0.15</version>
-          <configuration>
-            <webApp>
-              <contextPath>/</contextPath>
-            </webApp>
-            <scanIntervalSeconds>10</scanIntervalSeconds>
-          </configuration>
-        </plugin>
+        <finalName>twig</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>11.0.15</version>
+                <configuration>
+                    <webApp>
+                        <contextPath>/</contextPath>
+                    </webApp>
+                    <scanIntervalSeconds>10</scanIntervalSeconds>
+                </configuration>
+            </plugin>
 
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-war-plugin</artifactId>
-          <version>3.3.2</version>
-          <configuration>
-            <failOnMissingWebXml>false</failOnMissingWebXml>
-          </configuration>
-        </plugin>
-      </plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.2</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 
     <properties>
