@@ -1,16 +1,32 @@
-FROM dorowu/ubuntu-desktop-lxde-vnc
+FROM eclipse-temurin:17-jdk
 
-# Install Java and Maven
-USER root
-RUN apt-get update && \
-    apt-get install -y openjdk-17-jdk maven git
+# Install X11 and other dependencies for Java GUI applications
+RUN apt-get update && apt-get install -y \
+    xvfb \
+    x11-utils \
+    libxext6 \
+    libxrender1 \
+    libxtst6 \
+    libxi6 \
+    && rm -rf /var/lib/apt/lists/*
 
-# Set workdir and copy project
+# Set up working directory
 WORKDIR /app
-COPY . /app
 
-# Build Java project
-RUN mvn clean package
+# Copy Maven POM and source code
+COPY pom.xml ./
+COPY src/ src/
 
-# Set display and run the app
-CMD ["bash", "-c", "export DISPLAY=:1 && java -jar target/twig-0.0.4-core.jar"]
+# Install Maven and build the application
+RUN apt-get update && apt-get install -y maven && rm -rf /var/lib/apt/lists/* \
+    && mvn package -DskipTests
+
+# Set up environment for X11 forwarding
+ENV DISPLAY=:99
+
+# Create startup script
+RUN echo '#!/bin/bash\nXvfb :99 -screen 0 1280x1024x24 &\nsleep 1\njava -jar /app/target/twig-*-core.jar "$@"' > /app/start.sh \
+    && chmod +x /app/start.sh
+
+# Command to run when container starts
+ENTRYPOINT ["/app/start.sh"]
